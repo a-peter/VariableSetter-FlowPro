@@ -21,10 +21,10 @@ search(prefixes, (query, callback) => {
     if (!query) { callback([setx_result]); return; }
     
     // test if query has 
-    let data = query.split(' ');
+    let data = query.toLowerCase().split(' ');
     if (data.length == 1 || (data[1] != '' && !(data[1] in values)) || !(data[2])) {
-         callback([setx_result]);
-         return;
+        callback([setx_result]);
+        return;
     }
 
     let value = values[data[1]];
