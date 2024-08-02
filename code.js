@@ -6,6 +6,8 @@ const values = {
     'com1': ['K:COM_STBY_RADIO_SET_HZ', 'MHz', 1000000],
     'nav1': ['K:NAV1_STBY_SET_HZ', 'MHz', 1000000],
     'vor1': ['K:VOR1_SET', 'degrees', 1],
+    'qnhm': ['K:KOHLSMAN_SET', 'millibar', 16],
+    'qnhi': ['K:KOHLSMAN_SET', 'in/hg', 33.8639 * 16],
 };
 
 search(prefixes, (query, callback) => {
