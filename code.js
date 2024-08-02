@@ -1,3 +1,5 @@
+// Version 1.1
+
 let setx_result = null;
 const prefixes = ['setx'];
 const variables = {
